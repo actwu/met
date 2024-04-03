@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Met | Poem Written for you.</title>
+<meta name="description" content="Just a poem site">
+
+<meta property="og:title" content="Met | Poem Written for you.">
+<meta property="og:description" content="Just a poem site">
+<meta property="og:image" content="logo.svg">
+<meta name="twitter:title" content="Met | Poem Written for you.">
+<meta name="twitter:description" content="Just a poem site">
+<meta name="twitter:image" content="logo.svg">
+<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="URL of your tile image">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://actwu.github.io/ui/cute.css"/>
+</head>
+<style>
+screen {
+margin: 0;
+border-radius: 0;
+}
+hero, [stayed] {
+display: grid;
+position: sticky;
+top: 0;
+place-content: center;
+height:25vh;
+padding: 25vh 10px;
+transition: background-color 3s;
+}
+p {font-size: larger;}
+</style>
+<body>
+<screen id="logo" pbg>
+
+<box small stayed nobdr pbg>
+<i p2 class="fa-solid fa-xl fa-moon"></i>
+<p p2 head>met.</p>
+</box>
+</screen>
+<box small bbg>
+<p m="">Kindly Scroll Down</p>
+</box>
+<box small nobdr pbg>    
+<p p2 >Written by me/nine.</p>
+</box>
+<hero pbg2>
+
+<p p>The moon was bright.</p>
+<p p2>-</p>
+<p p="">the smile you tie,</p>
+
+<p p="">Curved just for me,</p>
+<p p2>-</p>
+<p p="">A beacon beams through the sky.</p>
+
+<p p="">You always shine.</p>
+</hero>
+<hero pbg2>
+<p p>It is day, yet it feels like night.</p>
+<p p2>-</p>
+<p p>To you my dear, I will say</p>
+<p p>From my losy-dale.</p>
+<p p2>-</p>
+<p p>Everytime i hear the sound</p>
+<p p>Everytime your name was called</p>
+
+</hero>
+
+<hero pbg>
+<p p2>You showed me how to bloom</p>
+<p p2>then gave me what to stew.</p>
+</hero>
+
+<hero rbg>
+<p r2>If it is red</p>
+</hero>
+<hero lbg>
+<p l2>Why it feels out of the blue.</p>
+</hero>
+
+<hero pbg2>
+<p p>I know myself. But i always think of you.</p>
+</hero>
+
+<hero pbg2>
+<p p>When We were younger, We act so closely.</p>
+<p p>Now. It's just a distance we can remove slowly</p>
+<p p>Either way and else. I know what it shouts.</p>
+</hero>
+<hero pbg2>
+<p p>The losy-dale just skips beat</p>
+<p p>and me smile</p>
+</hero><hero pbg2>
+<p p>But makes me sad</p>
+<p p>When your far away.</p>
+</hero>
+<hero id="ily" pbg2>
+<p r2>i won't hide. but i seek to say.</p>
+<p r2>I love you.</p>
+</hero>
+<box small rbg>    
+</box>
+
+<script>
+const element = document.querySelector('#ily');
+const options = {root: null, rootMargin: '0', threshold: 0.5};
+const observer = new IntersectionObserver((entries) =>
+entries.forEach((entry) => 
+{if(entry.isIntersecting ) {
+element.setAttribute('rbg', '');
+element.removeAttribute('pbg2')
+}else{
+element.setAttribute('pbg2', '');
+element.removeAttribute('rbg')
+}}));
+
+observer.observe(element);
+
+
+window.onload = function() {
+setTimeout(function() {
+const doc = document.documentElement;
+const body = document.body;
+const height = Math.max(doc.scrollHeight, body.scrollHeight);
+
+const scrollInterval = setInterval(() => {
+window.scrollBy(0, 1);
+}, 25);
+
+
+}, 5000);}
+</script>
+
+</body>
+</html>
