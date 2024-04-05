@@ -124,18 +124,8 @@ element.removeAttribute('rbg')
 observer.observe(element);
 
 
-window.onload = function() {
-setTimeout(function() {
-const doc = document.documentElement;
-const body = document.body;
-const height = Math.max(doc.scrollHeight, body.scrollHeight);
-
-const scrollInterval = setInterval(() => {
-window.scrollBy(0, 1);
-}, 25);
 
 
-}, 5000);}
 </script>
 
 </body>
